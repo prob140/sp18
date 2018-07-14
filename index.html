@@ -1,11 +1,1362 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-        
-{% include agenda.html%}
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Probability of Data Science (listed as Stat 140 and commonly called “Prob140”) is an introductory course on probability, emphasizing the combined use of mathematics and programming to solve problems" />
+  <title>
+    
+      Prob 140 &middot; Probability for Data Science
+    
+  </title>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/poole.css">
+  <link rel="stylesheet" href="/assets/css/syntax.css">
+  <link rel="stylesheet" href="/assets/css/hyde.css">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/basicModal.css">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="/assets/favicon/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/assets/favicon/favicon-16x16.png" sizes="16x16" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <script src="/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/css/swiper.min.css">
+<script src="/assets/js/swiper.jquery.min.js"></script>
+<script src="/assets/js/basicModal.min.js"></script>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script>
+  </script>
+</head>
+
+
+  <body class="theme-data">
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <div class="tooltip">
+        <a href="/" > <img class="iconIMG" src="/assets/icon.png"> </a>
+        <span class="tooltiptext">Logo Design by Biyonka Liang</span>
+      </div>
+      <p class="lead">Spring 2018 - Ani Adhikari</p>
+    </div>
+    <nav class="sidebar-nav">
+
+      
+      
+      
+            <a class="sidebar-nav-item active" href="/">Home</a>
+      
+            <a class="sidebar-nav-item" href="/about">About</a>
+      
+            <a class="sidebar-nav-item" href="/instructors">Staff</a>
+      
+            <a class="sidebar-nav-item" href="/logistics">Course Information</a>
+      
+            <a class="sidebar-nav-item" href="https://textbook.prob140.org/">Textbook</a>
+      
+            <a class="sidebar-nav-item" href="/references">Resources</a>
+      
+            <a class="sidebar-nav-item" href="/weekly">Weekly Schedule</a>
+      
+    </nav>
+
+    <p>Developed by Ani Adhikari, Dibya Ghosh, Jim Pitman, & Jason Zhang  </p>
+  </div>
+</div>
+
+    <div>
+          <div id="announcements-header" class="theme-data"> 
+          <b> Announcements! </b> (<a onclick="showAnnouncements()"> See All </a>) 
+          <div class="swiper-container2">
+    <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev2"></div>
+    <div class="swiper-button-next2"></div>
+    
+    <!-- If we need scrollbar -->
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide">
+        1/24 - Please check Weekly Schedule for the most up-to-date information on office hours.
+        </div>
+      
+        <div class="swiper-slide">
+        1/16 - Textbook has been released! Reload the page if the math doesn't render properly.
+        </div>
+      
+
+</div>
+</div>
+</div>
+    <div href='main' class="content container">
+      <div class="swiper-container">
+    <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 0 Overview</h3>
+          <h2 class="highlighted-title">Getting Started</h2>
+          <p class="highlighted-byline">Before January 16</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+            <li><a href="/assets/data8-fa17-midterm-guide.pdf">Data 8 Midterm Guide (Please review 2nd page)</a></li>
+            <li><a href="http://data8.org/datascience">Data 8's datascience Library</a></li>
+            <li><a href="/assets/prereq.pdf">Math Prerequisites</a></li>
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+
+      
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 1</h3>
+          <h2 class="highlighted-title">Introduction</h2>
+          <p class="highlighted-byline">1/15-1/19</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/1_00_Fundamentals.html">Ch 1: Fundamentals</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/2_00_Calculating_Chances.html">Ch 2: Calculating Chances</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw01a.ipynb">HW 1</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_01.ipynb">Lab 1</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 2</h3>
+          <h2 class="highlighted-title">Working with Random Variables</h2>
+          <p class="highlighted-byline">1/22-1/26</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/3_00_Random_Variables.html">Ch 3: Random Variables</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/4_00_Relations_Between_Variables.html">Ch 4: Relations Between Variables</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/5_00_Collections_of_Events.html">Ch 5: Collections of Events</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw02.ipynb">HW 2</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_02.ipynb">Lab 2</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 3</h3>
+          <h2 class="highlighted-title">Random Counts</h2>
+          <p class="highlighted-byline">1/29-2/2</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/6_00_Random_Counts.html">Ch 6: Random Counts</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/7_00_Poissonization.">Ch 7: Poissonization</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw03.ipynb">HW 3</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_03.ipynb">Lab 3</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 4</h3>
+          <h2 class="highlighted-title">Expectation</h2>
+          <p class="highlighted-byline">2/5-2/9</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/8_00_Expectation.html">Ch 8: Expectation</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/9_00_Conditioning_Revisited.html">Ch 9: Conditioning, Revisited</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw04.ipynb">HW 4</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_04.ipynb">Lab 4</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 5</h3>
+          <h2 class="highlighted-title">Markov Chains</h2>
+          <p class="highlighted-byline">2/12-2/16</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/10_00_Markov_Chains.html">Ch 10: Markov Chains</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/11_00_Reversing_Markov_Chains.html">Ch 11: Reversing Markov Chains</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw05.ipynb">HW 5</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_05.ipynb">Lab 5</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 6</h3>
+          <h2 class="highlighted-title">Reversing Markov Chains</h2>
+          <p class="highlighted-byline">2/19-2/23</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw06.ipynb">HW 6</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_06.ipynb">Lab 6</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 7</h3>
+          <h2 class="highlighted-title">Midterm</h2>
+          <p class="highlighted-byline">2/26-3/2</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_07.ipynb">Lab 7</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 8</h3>
+          <h2 class="highlighted-title">Variance and Covariance</h2>
+          <p class="highlighted-byline">3/5-3/9</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/12_00_Standard_Deviation.html">Ch 12: Standard Deviation</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/13_00_Variance_Via_Covariance.html">Ch 13: Variance Via Covariance</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw08.ipynb">HW 8</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_08.ipynb">Lab 8</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 9</h3>
+          <h2 class="highlighted-title">Continuous Distributions</h2>
+          <p class="highlighted-byline">3/12-3/16</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/14_00_The_Central_Limit_Theorem.html">Ch 14: The Central Limit Theorem</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/15_00_Continuous_Distributions.html">Ch 15: Continuous Distributions</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw09.ipynb">HW 9</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_09.ipynb">Lab 9</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 10</h3>
+          <h2 class="highlighted-title">Working with Continuous Distributions</h2>
+          <p class="highlighted-byline">3/19-3/23</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/16_00_Transformations.html">Ch 16: Transformations</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/17_00_Joint_Densities.html">Ch 17: Joint Densities</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw10.ipynb">HW 10</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 11</h3>
+          <h2 class="highlighted-title">The Normal and Gamma Families</h2>
+          <p class="highlighted-byline">4/2-4/6</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/18_00_The_Normal_and_Gamma_Families.html">Ch 18: The Normal and Gamma Families</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/19_00_Distributions_of_Sums.html">Ch 19: Distributions of Sums</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw11.ipynb">HW 11</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_10.ipynb">Lab 10</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 12</h3>
+          <h2 class="highlighted-title">An Approach to Prediction</h2>
+          <p class="highlighted-byline">4/9-4/13</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/20_00_Approaches_to_Estimation.html">Ch 20: Approaches to Estimation</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/21_00_The_Beta_and_the_Binomial.html">Ch 21: The Beta and the Binomial</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw12.ipynb">HW 12</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_11.ipynb">Lab 11</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 13</h3>
+          <h2 class="highlighted-title">Least Squares Prediction</h2>
+          <p class="highlighted-byline">4/16-4/20</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/22_00_Prediction.html">Ch 22: Prediction</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/23_00_Multivariate_Normal_RVs.html">Ch 23: Jointly Normal Random Variables</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw13.ipynb">HW 13</a></li>
+          
+            <li><a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_12.ipynb">Lab 12</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 14</h3>
+          <h2 class="highlighted-title">Regression</h2>
+          <p class="highlighted-byline">4/23-4/27</p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/24_00_Simple_Linear_Regression.html">Ch 24: Simple Linear Regression</a></li>
+          
+            <li><a href="https://textbook.prob140.org/notebooks-md/25_00_Multiple_Regression.html">Ch 25: Multiple Regression</a></li>
+          
+            <li><a href="/final_practice">Final Exam Prep</a></li>
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+      
+
+        <div class="swiper-slide">
+          <div class="wrap">
+          <h3 class="highlighted-subtitle">Week 15</h3>
+          <h2 class="highlighted-title"></h2>
+          <p class="highlighted-byline"></p> <span class="dividing-bar"></span>
+          <ul class="lists two-col">
+          
+          </ul> <i class="fa fa-angle-right next animate-3 next-week-overview"></i> </div>
+        </div>
+    
+
+</div>
+</div>
+
+<script>
+    $(document).ready(function () {
+    //initialize swiper when document ready  
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+         pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+      direction: 'horizontal',
+      loop: false,
+      initialSlide: 14
+    })        
+  });
+  </script>
+
 
 <div class="syllabusContainer">
-   {% include syllabus.html%}
+   <table id="calendar">
+<tbody>
+<tr><th>Week</th><th>Date</th><th>Activity</th><th>Content</th><th>Readings</th> <th> Assignment </th></tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="3">1</td>
+	
+	<td> Wed 1/17</td>
+	<td>  Lecture 1  </td>
+	<td>Probability: Axioms, Rules, Approximation</td>
+	<td>
+	
+	<a href="/prep/prep01">Week 1 Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/1_00_Fundamentals.html">Ch 1: Fundamentals </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/2_00_Calculating_Chances.html">Ch 2: Calculating Chances </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw01a.ipynb"> HW 1</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Thu 1/18</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Fri 1/19</td>
+	<td>  Lab 1  </td>
+	<td>Birthday Attack</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_01.ipynb"> Lab 1</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+  
+  <tr class="even"> <td class="weeknum" rowspan="5">2</td>
+	
+	<td> Mon 1/22</td>
+	<td>  Lecture 2  </td>
+	<td>Random Variables: Distributions, Conditioning, Equality</td>
+	<td>
+	
+	<a href="/prep/prep02">Week 2 Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/3_00_Random_Variables.html">Ch 3: Random Variables </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/4_00_Relations_Between_Variables.html">Ch 4: Relations Between Variables </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Tue 1/23</td>
+	<td>  HW 1 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Wed 1/24</td>
+	<td>  Lecture 3  </td>
+	<td>Symmetry and Collections of Events</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/5_00_Collections_of_Events.html">Ch 5: Collections of Events </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw02.ipynb"> HW 2</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Thu 1/25</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Fri 1/26</td>
+	<td>  Lab 2  </td>
+	<td>Five-Card Poker</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_02.ipynb"> Lab 2</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+  </tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="5">3</td>
+	
+	<td> Mon 1/29</td>
+	<td>  Lecture 4  </td>
+	<td>Binomial and Related Counts; the Poisson Limit</td>
+	<td>
+	
+	<a href="/prep/prep03">Week 3 Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/6_00_Random_Counts.html">Ch 6: Random Counts </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Tue 1/30</td>
+	<td>  HW 2 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Wed 1/31</td>
+	<td>  Lecture 5  </td>
+	<td>Independence and Poissonization</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/7_00_Poissonization.html">Ch 7: Poissonization </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw03.ipynb"> HW 3</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Thu 2/1</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Fri 2/2</td>
+	<td>  Lab 3  </td>
+	<td>Total Variation</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_03.ipynb"> Lab 3</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+  
+  <tr class="even"> <td class="weeknum" rowspan="5">4</td>
+	
+	<td> Mon 2/5</td>
+	<td>  Lecture 6  </td>
+	<td>Expectation and Additivity</td>
+	<td>
+	
+	<a href="/prep/prep04">Week 4 Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/8_00_Expectation.html">Ch 8: Expectation </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Tue 2/6</td>
+	<td>  HW 3 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Wed 2/7</td>
+	<td>  Lecture 7  </td>
+	<td>Finding Expectations by Conditioning</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/9_00_Conditioning_Revisited.html">Ch 9: Conditioning, Revisited </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw04.ipynb"> HW 4</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Thu 2/8</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Fri 2/9</td>
+	<td>  Lab 4  </td>
+	<td>Expectations of Discrete Order Statistics</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_04.ipynb"> Lab 4</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+  </tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="5">5</td>
+	
+	<td> Mon 2/12</td>
+	<td>  Lecture 8  </td>
+	<td>Long Run Behavior of Markov Chains</td>
+	<td>
+	
+	<a href="/prep/prep05">Week 5 Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/10_00_Markov_Chains.html">Ch 10: Markov Chains </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Tue 2/13</td>
+	<td>  HW 4 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Wed 2/14</td>
+	<td>  Lecture 9  </td>
+	<td>Reversibility</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/11_00_Reversing_Markov_Chains.html">Ch 11: Reversing Markov Chains </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw05.ipynb"> HW 5</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Thu 2/15</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Fri 2/16</td>
+	<td>  Lab 5  </td>
+	<td>Uniform and Size Biased Permutations</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_05.ipynb"> Lab 5</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+  
+  <tr class="even"> <td class="weeknum" rowspan="5">6</td>
+	
+	<td> Mon 2/19</td>
+	<td>  Holiday: No content  </td>
+	<td></td>
+	<td>
+	
+	<a href="/prep/midterm">Midterm Guide </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Tue 2/20</td>
+	<td>  HW 5 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Wed 2/21</td>
+	<td>  Lecture 10  </td>
+	<td>Markov Chain Monte Carlo</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw06.ipynb"> HW 6</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Thu 2/22</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Fri 2/23</td>
+	<td>  Lab 6  </td>
+	<td>Code Breaking by MCMC</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_06.ipynb"> Lab 6</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+  </tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="5">7</td>
+	
+	<td> Mon 2/26</td>
+	<td>  Lecture 11  </td>
+	<td>Midterm Review</td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Tue 2/27</td>
+	<td>  HW 6 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Wed 2/28</td>
+	<td>  Midterm  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Thu 3/1</td>
+	<td>  No Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Fri 3/2</td>
+	<td>  Lab 7  </td>
+	<td>Board Game Night</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_07.ipynb"> Lab 7</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+  
+  <tr class="even"> <td class="weeknum" rowspan="5">8</td>
+	
+	<td> Mon 3/5</td>
+	<td>  Lecture 12  </td>
+	<td>SD: Tail Bounds, Least Squares</td>
+	<td>
+	
+	<a href="/prep/prep08">Week 8 Prep Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/12_00_Standard_Deviation.html">Ch 12: Standard Deviation </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Tue 3/6</td>
+	<td>  HW 7 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Wed 3/7</td>
+	<td>  Lecture 13  </td>
+	<td>Covariance and its Uses</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/13_00_Variance_Via_Covariance.html">Ch 13: Variance Via Covariance </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw08.ipynb"> HW 8</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Thu 3/8</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Fri 3/9</td>
+	<td>  Lab 8  </td>
+	<td>Decisions Based on Ranks</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_08.ipynb"> Lab 8</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+  </tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="5">9</td>
+	
+	<td> Mon 3/12</td>
+	<td>  Lecture 14  </td>
+	<td>Central Limit Theorem</td>
+	<td>
+	
+	<a href="/prep/prep09">Week 9 Prep Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/14_00_The_Central_Limit_Theorem.html">Ch 14: The Central Limit Theorem </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Tue 3/13</td>
+	<td>  HW 8 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Wed 3/14</td>
+	<td>  Lecture 15  </td>
+	<td>Probability Densities</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/15_00_Continuous_Distributions.html">Ch 15: Continuous Distributions </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw09.ipynb"> HW 9</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Thu 3/15</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Fri 3/16</td>
+	<td>  Lab 9  </td>
+	<td>Simulation and the CDF</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_09.ipynb"> Lab 9</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+  
+  <tr class="even"> <td class="weeknum" rowspan="5">10</td>
+	
+	<td> Mon 3/19</td>
+	<td>  Lecture 16  </td>
+	<td>Transformations</td>
+	<td>
+	
+	<a href="prep/prep10">Week 10 Prep Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/16_00_Transformations.html">Ch 16: Transformations </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Tue 3/20</td>
+	<td>  HW 9 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Wed 3/21</td>
+	<td>  Lecture 17  </td>
+	<td>Joint Densities; the Beta Family</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/17_00_Joint_Densities.html">Ch 17: Joint Densities </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw10.ipynb"> HW 10</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Thu 3/22</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Fri 3/23</td>
+	<td>  No lab  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+  </tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="5">11</td>
+	
+	<td> Mon 4/2</td>
+	<td>  Lecture 18  </td>
+	<td>Independent <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2465539/">Normal</a> and Gamma Variables</td>
+	<td>
+	
+	<a href="/prep/prep11">Week 11 Prep Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/18_00_The_Normal_and_Gamma_Families.html">Ch 18: The Normal and Gamma Families </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Tue 4/3</td>
+	<td>  HW 10 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Wed 4/4</td>
+	<td>  Lecture 19  </td>
+	<td>Moment Generating Functions; Chernoff Bound</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/19_00_Distributions_of_Sums.html">Ch 19: Distributions of Sums </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw11.ipynb"> HW 11</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Thu 4/5</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Fri 4/6</td>
+	<td>  Lab 10  </td>
+	<td>Introduction to Jointly Normal Vectors</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_10.ipynb"> Lab 10</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+  
+  <tr class="even"> <td class="weeknum" rowspan="5">12</td>
+	
+	<td> Mon 4/9</td>
+	<td>  Lecture 20  </td>
+	<td>MLE, Posterior Distributions, and MAP Estimates</td>
+	<td>
+	
+	<a href="/prep/prep12">Week 12 Prep Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/20_00_Approaches_to_Estimation.html">Ch 20: Approaches to Estimation </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Tue 4/10</td>
+	<td>  HW 11 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Wed 4/11</td>
+	<td>  Lecture 21  </td>
+	<td>Beta-Binomial</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/21_00_The_Beta_and_the_Binomial.html">Ch 21: The Beta and the Binomial </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw12.ipynb"> HW 12</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Thu 4/12</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Fri 4/13</td>
+	<td>  Lab 11  </td>
+	<td>Chinese Restaurant Process, Part I</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_11.ipynb"> Lab 11</a>
+		  </td>
+	</tr>
+	<tr class="even">
+  
+  </tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="5">13</td>
+	
+	<td> Mon 4/16</td>
+	<td>  Lecture 22  </td>
+	<td>Prediction and Error</td>
+	<td>
+	
+	<a href="/prep/prep13">Week 13 Prep </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/22_00_Prediction.html">Ch 22: Prediction </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Tue 4/17</td>
+	<td>  HW 12 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Wed 4/18</td>
+	<td>  Lecture 23  </td>
+	<td>Multivariate Normal Distribution</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/23_00_Multivariate_Normal_RVs.html">Ch 23: Jointly Normal Random Variables </a> <br />
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=hw/hw13.ipynb"> HW 13</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Thu 4/19</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+	<td> Fri 4/20</td>
+	<td>  Lab 12  </td>
+	<td>Chinese Restaurant Process, Part II</td>
+	<td>
+	
+	</td>
+	<td>   <a href="http://prob140.berkeley.edu/hub/user-redirect/git-pull?repo=https://github.com/prob140/materials&branch=gh-pages&subPath=lab/Lab_12.ipynb"> Lab 12</a>
+		  </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+  
+  <tr class="even"> <td class="weeknum" rowspan="5">14</td>
+	
+	<td> Mon 4/23</td>
+	<td>  Lecture 24  </td>
+	<td>Correlation and Simple Regression</td>
+	<td>
+	
+	<a href="/prep/prep14">Prep 14 Prep Guide </a> <br />
+	
+	<a href="https://textbook.prob140.org/notebooks-md/24_00_Simple_Linear_Regression.html">Ch 24: Simple Linear Regression </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Tue 4/24</td>
+	<td>  HW 13 Due  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Wed 4/25</td>
+	<td>  Lecture 25  </td>
+	<td>Multiple Regression</td>
+	<td>
+	
+	<a href="https://textbook.prob140.org/notebooks-md/25_00_Multiple_Regression.html">Ch 25: Multiple Regression </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Thu 4/26</td>
+	<td>  Discussion  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+	<td> Fri 4/27</td>
+	<td>  Review Session  </td>
+	<td></td>
+	<td>
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="even">
+  
+  </tr>
+
+  
+  <tr class="odd"> <td class="weeknum" rowspan="1">15</td>
+	
+	<td> Fri 5/11</td>
+	<td>  FINAL EXAM (3-6)  </td>
+	<td></td>
+	<td>
+	
+	<a href="/final_practice">Final Exam Prep </a> <br />
+	
+	</td>
+	<td>     </td>
+	</tr>
+	<tr class="odd">
+  
+  </tr>
+
+</tbody>
+</table>
+
 </div>
+
+    </div>
+    </div>
+  </body>
+
+<script>
+    $(document).ready(function () {
+    //initialize swiper when document ready  
+    var mySwiper = new Swiper ('.swiper-container2', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      autoplay: 100000,
+      speed: 3000,
+      initialSlide:0,
+      spaceBetween: 1000
+    })        
+  });
+
+    function showAnnouncements(){
+      basicModal.show({
+    body: "<h2> Announcements </h2> <ul><li>1/24 - Please check Weekly Schedule for the most up-to-date information on office hours.</li><li>1/16 - Textbook has been released! Reload the page if the math doesn't render properly.</li></ul>",
+    closable: true,
+    buttons: {
+        action: {
+            title: 'Dismiss',
+            fn: basicModal.close
+        }
+    }
+});
+    }
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86100204-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
