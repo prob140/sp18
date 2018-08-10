@@ -10,9 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta name="description" content="Probability of Data Science (listed as Stat 140 and commonly called “Prob140”) is an introductory course on probability, emphasizing the combined use of mathematics and programming to solve problems" />
   <title>
-    
+
       Week 1 Preparation Guide &middot; Prob 140
-    
+
   </title>
 
 <script type="text/x-mathjax-config">
@@ -63,23 +63,23 @@ MathJax.Hub.Config({
     </div>
     <nav class="sidebar-nav">
 
-      
-      
-      
+
+
+
             <a class="sidebar-nav-item" href="/sp18/">Home</a>
-      
+
             <a class="sidebar-nav-item" href="/sp18/about">About</a>
-      
+
             <a class="sidebar-nav-item" href="/sp18/instructors">Staff</a>
-      
+
             <a class="sidebar-nav-item" href="/sp18/logistics">Course Information</a>
-      
-            <a class="sidebar-nav-item" href="https://textbook.prob140.org/">Textbook</a>
-      
+
+            <a class="sidebar-nav-item" href="/sp18/textbook/">Textbook</a>
+
             <a class="sidebar-nav-item" href="/sp18/references">Resources</a>
-      
+
             <a class="sidebar-nav-item" href="/sp18/weekly">Weekly Schedule</a>
-      
+
     </nav>
 
     <p>Developed by Ani Adhikari, Dibya Ghosh, Jim Pitman, & Jason Zhang  </p>
@@ -87,27 +87,27 @@ MathJax.Hub.Config({
 </div>
 
     <div>
-          <div id="announcements-header" class="theme-data"> 
-          <b> Announcements! </b> (<a onclick="showAnnouncements()"> See All </a>) 
+          <div id="announcements-header" class="theme-data">
+          <b> Announcements! </b> (<a onclick="showAnnouncements()"> See All </a>)
           <div class="swiper-container2">
     <!-- Additional required wrapper -->
         <!-- If we need pagination -->
-    
+
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev2"></div>
     <div class="swiper-button-next2"></div>
-    
+
     <!-- If we need scrollbar -->
     <div class="swiper-wrapper">
-      
+
         <div class="swiper-slide">
         1/24 - Please check Weekly Schedule for the most up-to-date information on office hours.
         </div>
-      
+
         <div class="swiper-slide">
         1/16 - Textbook has been released! Reload the page if the math doesn't render properly.
         </div>
-      
+
 
 </div>
 </div>
@@ -131,7 +131,7 @@ MathJax.Hub.Config({
 
 <ul>
   <li>Pitman 1.3.2, 1.3.10, 1.4.8, 1.6.5, 1.rev.8, 1.rev.16</li>
-  <li>The multiplication rule says that $P(A_1A_2) = P(A_1)P(A_2 \vert A_1)$. Use induction to show that for events $A_1, A_2, \ldots, A_n$, 
+  <li>The multiplication rule says that $P(A_1A_2) = P(A_1)P(A_2 \vert A_1)$. Use induction to show that for events $A_1, A_2, \ldots, A_n$,
 <script type="math/tex">P(A_1A_2 \ldots A_n) ~ = ~ P(A_1)P(A_2 \vert A_1)P(A_3 \vert A_1A_2) \cdots P(A_n \vert A_1A_2 \ldots A_{n-1})</script></li>
   <li>Recall from Data 8 that the <em>probability distribution</em> of a random quantity consists of the set of all possible values of the quantity along with the probabilities of all those values. We’ll define “random quantity” more formally next week; for now, it’s fine to rely on your understanding from Data 8. Find the probability distribution of the minimum of $n$ numbers drawn at random with replacement from the set $1, 2, 3, \ldots, N$.</li>
 </ul>
@@ -148,7 +148,7 @@ MathJax.Hub.Config({
 
 <script>
     $(document).ready(function () {
-    //initialize swiper when document ready  
+    //initialize swiper when document ready
     var mySwiper = new Swiper ('.swiper-container2', {
       // Optional parameters
       direction: 'horizontal',
@@ -157,7 +157,7 @@ MathJax.Hub.Config({
       speed: 3000,
       initialSlide:0,
       spaceBetween: 1000
-    })        
+    })
   });
 
     function showAnnouncements(){
